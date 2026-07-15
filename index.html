@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suresh Moorthy | A Daylight Promise: A Symphonic Suite</title>
+    <style>
+        /* Base Styling */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: radial-gradient(circle at center, #0f1322 0%, #05060a 100%);
+            color: #f1f5f9;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 50px 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+        }
+
+        /* Award Badge */
+        .award-badge {
+            background: linear-gradient(135deg, #b3924e 0%, #d4af37 50%, #f3e5ab 100%);
+            color: #05060a;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 8px 16px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 6px;
+            text-shadow: 0 0 15px rgba(255,255,255,0.1);
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #38bdf8;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .bio {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            text-align: left;
+            margin-bottom: 45px;
+            background: rgba(0,0,0,0.25);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        /* Movement Section */
+        h2.section-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding-bottom: 10px;
+        }
+        .movement-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .movement-meta {
+            margin-bottom: 12px;
+        }
+        .movement-title {
+            font-size: 1.1rem;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .movement-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #0ea5e9;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .movement-desc {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Video Embeds */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            background: #000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Action Buttons */
+        .btn-group {
+            margin-top: 45px;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.25);
+            margin-bottom: 15px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: none;
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.3);
+            box-shadow: none;
+        }
+        .contact-link {
+            display: block;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 25px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-link:hover { color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Award Recognition Banner -->
+        <div class="award-badge">Winner: One Earth Music Award (Season 11)</div>
+
+        <!-- Main Header -->
+        <h1>Suresh Moorthy</h1>
+
+        <!-- Profile Biography -->
+        <p class="bio">
+            Suresh Moorthy is an award winning composer whose music blends Eastern and Western traditions through a symphonic, cinematic approach. Drawing inspiration from the electronic legacy of Vangelis, he combines orchestral arrangements with New Age textures to create immersive musical landscapes. His upcoming project, A Daylight Promise: A Symphonic Suite, highlights a unique fusion of orchestral depth and classical Indian melodic structures.
+        </p>
+
+        <h2 class="section-title">A Daylight Promise: A Symphonic Suite</h2>
+
+        <!-- Movement 1 -->
+        <div class="movement-card">
+            <div class="movement-meta">
+                <span class="movement-label">First Movement</span>
+                <span class="movement-title">Breath Amid the Dust</span>
+            </div>
+            <p class="movement-desc">Strings and woodwinds in sonata form, tracing the emergence of life in the world of matter.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Zh2teiPjWCA" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Movement 2 -->
+        <div class="movement-card">
+            <div class="movement-meta">
+                <span class="movement-label">Second Movement</span>
+                <span class="movement-title">Before the Candle Falls</span>
+            </div>
+            <p class="movement-desc">Strings, piano and timpani set in India’s tala system, capturing innocence before it grows into experience.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/HMPv6vjJx2Q" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Movement 3 -->
+        <div class="movement-card">
+            <div class="movement-meta">
+                <span class="movement-label">Third Movement</span>
+                <span class="movement-title">Knowledge, Half-Bitten</span>
+            </div>
+            <p class="movement-desc">A polyphony for strings, piano and woodwinds, showing how knowledge can obscure our true nature.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MS3V8D2_PAI" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Movement 4 -->
+        <div class="movement-card">
+            <div class="movement-meta">
+                <span class="movement-label">Fourth Movement</span>
+                <span class="movement-title">Between Reality and If Only</span>
+            </div>
+            <p class="movement-desc">A counterpoint for strings, where today meets yesterday’s folly.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Vbyn77FAokc" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Movement 5 -->
+        <div class="movement-card">
+            <div class="movement-meta">
+                <span class="movement-label">Fifth Movement</span>
+                <span class="movement-title">Ransom in a Raindrop</span>
+            </div>
+            <p class="movement-desc">Strings sustained over a Carnatic inspired drone, illuminating the path forward amid mist and missteps.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/m5xvzdCktQ0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Movement 6 -->
+        <div class="movement-card">
+            <div class="movement-meta">
+                <span class="movement-label">Sixth Movement (Award Winner)</span>
+                <span class="movement-title">Earth in Heaven’s Embrace</span>
+            </div>
+            <p class="movement-desc">Strings and timpani, shaped by the raga system of India, foretelling the meeting of the high and the low.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/eThUNAyekfE" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Action Items for Publicists / Listeners -->
+        <div class="btn-group">
+            <a href="press-kit.pdf" class="btn" download>Download Press Kit (EPK)</a>
+        </div>
+
+        <a href="mailto:surmoor@gmail.com" class="contact-link">For press, licensing, or booking inquiries, contact us</a>
+
+    </div>
+
+</body>
+</html>
